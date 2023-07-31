@@ -1,0 +1,47 @@
+.our-users {
+    display: flex;
+    flex-direction: column;
+}
+
+.our-users-card {
+    position: relative;
+    right: 0px;
+    /* border-bottom: 1px solid orangered;
+    border-left: 1px solid orangered;
+    border-right: 1px solid orangered; */
+    padding: 50px;
+    font-size: 16px;
+    margin: 0;
+}
+
+.our-users-card.tenants {
+    background: #468cc8;
+    color: #031f48;
+}
+
+.our-users-card.landlord {
+    background: #031f48;
+    color: white;
+}
+
+.our-users-card h4 {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.our-users-card button {
+    display: block;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 700px) {
+    .our-users  {
+        flex-direction: row;
+        width: auto;
+    }
+
+    .our-users-card {
+        margin: 0;
+        padding: 100px;
+    }
+}

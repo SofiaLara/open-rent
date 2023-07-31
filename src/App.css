@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+/* TODO: buttons hover, and active states, add color variables and css nesting */
+
+main {
+  width: 100%;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-weight: bold;
+  font-size: 52px;
+  margin: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+  font-weight: 100;
+  color: #468cc8;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button {
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    outline: 0;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+button.primary {
+  background-color: #d54f0c;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+button.secondary {
+  background: transparent;
+  color: #468cc8;
+  text-decoration: underline;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button.secondary--alternative {
+  background: transparent;
+  color: #031f48;
+  text-decoration: underline;
+}
+
+.about {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+}
+
+.as-seen {
+  margin-bottom: 40px;
+}
+
+/* Slick carousel */
+
+.slick-track {
+  display: flex;
+  gap: 1rem;
+}
+
+.slick-prev, .slick-next {
+  z-index: 100;
+  width: 30px;
+  height: 30px;
+}
+
+.slick-next{
+  right: 20px;
+}
+
+.slick-prev{
+  left: 20px;
 }

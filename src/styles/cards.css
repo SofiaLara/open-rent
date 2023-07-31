@@ -1,0 +1,21 @@
+.cards {
+    margin-bottom: 40px;
+}
+
+.card {
+    position: relative;
+    margin-bottom:10px
+}
+
+.card-info {
+    position: absolute;
+    bottom: -7px;
+    background: #468cc8;
+    color: white;
+    left: -7px;
+    padding: 10px;
+}
+
+.card-price {
+    font-weight: bold;
+}
